@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+#navbar {
+  background-color: #000;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.logo {
+  color: white;
+}
+
+.links ul {
+  display: flex;
+  gap: 20px;
+}
+
+.links ul li {
+  list-style-type: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+}
+
+.links ul li a:hover {
+  background-color: #fca311;
+  color: black;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+.main-text h1 {
+  margin: 0;
+  color: white;
+  font-size: 6rem;
+}
+
+.main-text .name {
+  color: #fca311;
+}
+
+.sub-text p {
+  color: ##e5e5e5;
+  font-size: 2rem;
+}
+
+#work {
+  background-color: #e5e5e5;
+}
+
+#work .work-main {
+  margin: 0;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 3em;
+  color: #000;
+}
+
+#work .line {
+  background-color: #000;
+  height: 2px;
+  width: 40%;
+  margin: 10px auto;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+}
+
+.card .card-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .card-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+a.card-link:hover {
+  background-color: #fca311;
+  color: black;
+}
+
+#contact {
+  height: 80vh;
+  background-color: #14213d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 30px 0 30px;
+  margin-bottom: 10px;
+}
+
+.contact-main {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.contact-sub {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.contact-link ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: ;
+}
+
+.contact-link ul li {
+  list-style-type: none;
+}
+
+.contact-link ul li a {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-link ul li a:hover {
+  font-size: 2.5em;
+  color: #fca311;
+}
+
+#footer {
+  height: 20vh;
+  background-color: #14213d;
+}
+
+.footer-wrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: #fca311;
+}
+
+@media only screen and (max-width: 480px) {
+  #navbar {
+    flex-direction: column;
+    position: fixed;
+  }
+  .logo {
+    padding-top: 10px;
+  }
+  .links ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .contact-link ul {
+    flex-direction: column;
+  }
+}
