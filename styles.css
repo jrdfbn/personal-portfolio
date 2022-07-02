@@ -68,11 +68,11 @@ body {
   font-size: 2rem;
 }
 
-#work {
+#projects {
   background-color: #e5e5e5;
 }
 
-#work .work-main {
+#projects .project-main {
   margin: 0;
   padding-top: 100px;
   text-align: center;
@@ -80,7 +80,7 @@ body {
   color: #000;
 }
 
-#work .line {
+#projects .line {
   background-color: #000;
   height: 2px;
   width: 40%;
@@ -94,15 +94,12 @@ body {
   padding: 20px;
 }
 
-.card {
-}
-
-.card .card-img {
+.project-tile .tile-img {
   width: 100%;
   object-fit: cover;
 }
 
-.card .card-link {
+.project-tile .tile-link {
   display: block;
   text-decoration: none;
   color: white;
@@ -111,7 +108,7 @@ body {
   text-align: center;
 }
 
-a.card-link:hover {
+a.tile-link:hover {
   background-color: #fca311;
   color: black;
 }
@@ -143,7 +140,7 @@ a.card-link:hover {
   gap: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: ;
 }
 
 .contact-link ul li {
